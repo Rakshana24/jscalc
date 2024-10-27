@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator</title>
+        <style>
+            tr{
+                background-color:darkslategrey;
+                border:10px;
+                border-color: black;
+                
+                
+                
+            }
+            table{
+              margin-left: 43%;
+              margin-top:2%;
+            }
+
+            
+            button:hover
+            {
+                background-color:lightsteelblue;
+            }
+            #a{
+                height: 55px;
+                background-color:slategrey;
+            }
+            button{
+                height:50px;
+                width: 50px;
+               
+            }
+            #b{
+                background-color:darkgray;
+            }
+            h1{
+                text-align: center;
+                margin-top: 5%;
+            }
+            body{
+                background-color:silver;
+            }
+            #a:hover{
+                background-color:lightsteelblue;
+            }
+            #display{
+                height:50px;
+                width:100%;
+                font-size: large;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <h1>CALCULATOR</h1>
+        <table border="2px">
+            <tr id="a">
+                <td colspan="4"><input id="display" type="text"></td>
+            </tr>
+            <tr></tr>
+            <tr> </tr>
+            <tr> </tr>
+            <tr>
+                <td><button onclick="clearDisplay()">ac</button></td>
+                <td><button onclick="working('%')">%</button></td>
+                <td><button onclick="working('()')">()</button></td>
+                <td><button onclick="working('/')">/</button></td>
+                
+            </tr>
+            
+            <tr>
+                <td><button onclick="working('7')">7</button></td>
+                <td><button onclick="working('8')">8</button></td>
+                <td><button onclick="working('9')">9</button></td>
+                <td><button onclick="working('*')">*</button></td>
+
+            </tr>
+            <tr>
+                <td><button onclick="working('4')">4</button></td>
+                <td><button onclick="working('5')">5</button></td>
+                <td><button onclick="working('6')">6</button></td>
+                <td><button onclick="working('+')">+</button></td>
+                
+            </tr>
+            <tr>
+                <td><button onclick="working('1')">1</button></td>
+                <td><button onclick="working('2')">2</button></td>
+                <td><button onclick="working('3')">3</button></td>
+                <td><button onclick="working('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="working('00')">00</button></td>
+                <td><button onclick="working('0')">0</button></td>
+                <td><button onclick="working('.')">.</button></td>
+                <td><button id="b" onclick="calculateResult('=')">=</button></td>
+            </tr>
+        </table>
+        <script src="sor.js"></script>
+    </body>
+</html>
